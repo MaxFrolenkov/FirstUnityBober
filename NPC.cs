@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class NPC : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private int health = 10;
+    private int level = 5;
+    privte int speed = 2;
+    
     void Start()
     {
-        
+        helth+=level;
+        print('Здоровье нпс'+ health)
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
+        Vector3 newPosition= transfom.position;
+        newPosition.z += speed * Time.deltaTime
         
     }
 }
